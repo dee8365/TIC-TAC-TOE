@@ -3,28 +3,65 @@ let m =0;
 let c=0;
 let z =0;
 let ind=30;
-let win1 =0
+let win1 =0;
 let win2=0;
 let n=0;
-let x=0;'
+let x=0;
 let y=0;
 let draw=0;
 let cord1=0;
 let cord2=0;
 const winset=[[0,1,2],[0,3,6],[0,4,8],[2,4,6],[3,4,5],[6,7,8],[1,4,7],[2,5,8]];
-for(let ind=0;ind<9;ind++){
-document.querySelector(`.pos${ind}`).addEventListener('click',() =>{
+document.querySelector('.pos0').addEventListener('click',() =>{ind=0;
     document.querySelector(`.pos${ind}`).textContent="X";
 playing(ind);
 });
-}
+document.querySelector('.pos1').addEventListener('click',() =>{ind=1;
+    document.querySelector(`.pos${ind}`).textContent="X";
+    playing(ind);
+;});
+document.querySelector('.pos2').addEventListener('click',() =>{ind=2;
+    document.querySelector(`.pos${ind}`).textContent="X";
+playing(ind);
+});
+document.querySelector('.pos3').addEventListener('click',() =>{ind=3;
+        document.querySelector(`.pos${ind}`).textContent="X";
+playing(ind);
+});
+document.querySelector('.pos4').addEventListener('click',() =>{ind=4;
+    document.querySelector(`.pos${ind}`).textContent="X";
+playing(ind);
+});
+ 
+document.querySelector('.pos5').addEventListener('click',() =>{ind=5;
+    document.querySelector(`.pos${ind}`).textContent="X";
+playing(ind);
+});
+document.querySelector('.pos6').addEventListener('click',() =>{ind=6;
+    document.querySelector(`.pos${ind}`).textContent="X";
+playing(ind);
+});
+document.querySelector('.pos7').addEventListener('click',() =>{ind=7;
+    document.querySelector(`.pos${ind}`).textContent="X";
+playing(ind);
+});
+document.querySelector('.pos8').addEventListener('click',() =>{ind=8;
+    document.querySelector(`.pos${ind}`).textContent="X";
+ playing(ind);
+});
 function playing(cord1){
     c++;
 m=0;
-z=0
-for(let i=0;i<9;i++)
-{let `play${i}`=document.querySelector(`.pos${i}`).textContent;
-}
+z=0;
+let play0=document.querySelector('.pos0').textContent;
+let play1=document.querySelector('.pos1').textContent;
+let play2=document.querySelector('.pos2').textContent;
+let play3=document.querySelector('.pos3').textContent;
+let play4=document.querySelector('.pos4').textContent;
+let play5=document.querySelector('.pos5').textContent;
+let play6=document.querySelector('.pos6').textContent;
+let play7=document.querySelector('.pos7').textContent;
+let play8=document.querySelector('.pos8').textContent;
 const plays=[play0,play1,play2,play3,play4,play5,play6,play7,play8];
 if (c==1){ console.log(c);
     for(let i=0;i<9;i++){
@@ -126,8 +163,7 @@ break;
 }        
    if(draw==8){
      document.querySelector('.result').textContent="                     MATCH             DRAW        ";
-   }         
+    }         
 for(let i=0; i<9; i++){
  document.querySelector(`.pos${i}`).textContent=plays[i];
 }}
-    
