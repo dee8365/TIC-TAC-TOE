@@ -50,6 +50,7 @@ document.querySelector('.pos8').addEventListener('click',() =>{ind=8;
  playing(ind);
 });
 function playing(cord1){
+    if(index[ind]!=1){
     c++;
 m=0;
 z=0;
@@ -63,7 +64,7 @@ let play6=document.querySelector('.pos6').textContent;
 let play7=document.querySelector('.pos7').textContent;
 let play8=document.querySelector('.pos8').textContent;
 const plays=[play0,play1,play2,play3,play4,play5,play6,play7,play8];
-if (c==1){ console.log(c);
+if (c==1){
     for(let i=0;i<9;i++){
         if(( i==0 ||  i==2 ||i==6 ||i==8 || i==3||i==5)&& plays[i]=="X")
                 {
@@ -167,3 +168,4 @@ break;
 for(let i=0; i<9; i++){
  document.querySelector(`.pos${i}`).textContent=plays[i];
 }}
+}
