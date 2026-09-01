@@ -17,7 +17,7 @@ playing(ind);
 });
 document.querySelector('.pos1').addEventListener('click',() =>{ind=1;
     playing(ind);
-;});
+                                                              });
 document.querySelector('.pos2').addEventListener('click',() =>{ind=2;
 playing(ind);
 });
