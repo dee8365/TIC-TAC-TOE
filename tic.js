@@ -49,9 +49,9 @@ document.querySelector('.pos8').addEventListener('click',() =>{ind=8;
     document.querySelector(`.pos${ind}`).textContent="X";
  playing(ind);
 });
-function playing(cord1){
-    if(index[ind]!=1){
-    c++;
+function playing (cord1){
+        if(plays[ind]==""){
+c++
 m=0;
 z=0;
 let play0=document.querySelector('.pos0').textContent;
