@@ -160,5 +160,5 @@ break;
     }         
 for(let i=0; i<9; i++){
  document.querySelector(`.pos${i}`).textContent=plays[i];
-}}
+}
 }}
