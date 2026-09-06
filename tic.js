@@ -17,6 +17,8 @@ document.querySelector('.pos0').addEventListener('click',() =>{
         ind=0;
         document.querySelector(`.pos${ind}`).textContent="X";
         playing(ind);
+    }else{
+        alert('press');
     }
 });
 document.querySelector('.pos1').addEventListener('click',() =>{
