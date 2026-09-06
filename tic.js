@@ -13,36 +13,44 @@ let cord1=0;
 let cord2=0;
 const winset=[[0,1,2],[0,3,6],[0,4,8],[2,4,6],[3,4,5],[6,7,8],[1,4,7],[2,5,8]];
 document.querySelector('.pos0').addEventListener('click',() =>{ind=0;
+    document.querySelector(`.pos${ind}`).textContent="X";
 playing(ind);
 });
 document.querySelector('.pos1').addEventListener('click',() =>{ind=1;
+    document.querySelector(`.pos${ind}`).textContent="X";
     playing(ind);
-                                                              });
+;});
 document.querySelector('.pos2').addEventListener('click',() =>{ind=2;
+    document.querySelector(`.pos${ind}`).textContent="X";
 playing(ind);
 });
 document.querySelector('.pos3').addEventListener('click',() =>{ind=3;
+        document.querySelector(`.pos${ind}`).textContent="X";
 playing(ind);
 });
 document.querySelector('.pos4').addEventListener('click',() =>{ind=4;
+    document.querySelector(`.pos${ind}`).textContent="X";
 playing(ind);
 });
  
 document.querySelector('.pos5').addEventListener('click',() =>{ind=5;
+    document.querySelector(`.pos${ind}`).textContent="X";
 playing(ind);
 });
-document.querySelector('.pos6').addEventListener('click',() =>{ind=6
+document.querySelector('.pos6').addEventListener('click',() =>{ind=6;
+    document.querySelector(`.pos${ind}`).textContent="X";
 playing(ind);
 });
 document.querySelector('.pos7').addEventListener('click',() =>{ind=7;
-   
+    document.querySelector(`.pos${ind}`).textContent="X";
 playing(ind);
 });
 document.querySelector('.pos8').addEventListener('click',() =>{ind=8;
+    document.querySelector(`.pos${ind}`).textContent="X";
  playing(ind);
 });
-function playing (cord1){
-c++
+function playing(cord1){
+    c++;
 m=0;
 z=0;
 let play0=document.querySelector('.pos0').textContent;
@@ -55,9 +63,7 @@ let play6=document.querySelector('.pos6').textContent;
 let play7=document.querySelector('.pos7').textContent;
 let play8=document.querySelector('.pos8').textContent;
 const plays=[play0,play1,play2,play3,play4,play5,play6,play7,play8];
-    if(plays[cord1]==""){
-document.querySelector(`.pos${cord1}`).textContent="X";
-if (c==1){
+if (c==1){ console.log(c);
     for(let i=0;i<9;i++){
         if(( i==0 ||  i==2 ||i==6 ||i==8 || i==3||i==5)&& plays[i]=="X")
                 {
@@ -160,5 +166,4 @@ break;
     }         
 for(let i=0; i<9; i++){
  document.querySelector(`.pos${i}`).textContent=plays[i];
-}
 }}
