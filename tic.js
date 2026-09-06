@@ -12,13 +12,19 @@ let draw=0;
 let cord1=0;
 let cord2=0;
 const winset=[[0,1,2],[0,3,6],[0,4,8],[2,4,6],[3,4,5],[6,7,8],[1,4,7],[2,5,8]];
-document.querySelector('.pos0').addEventListener('click',() =>{ind=0;
-    document.querySelector(`.pos${ind}`).textContent="X";
-playing(ind);
+document.querySelector('.pos0').addEventListener('click',() =>{
+    if(document.querySelector('.pos0').textContent != ''){
+        ind=0;
+        document.querySelector(`.pos${ind}`).textContent="X";
+        playing(ind);
+    }
 });
-document.querySelector('.pos1').addEventListener('click',() =>{ind=1;
-    document.querySelector(`.pos${ind}`).textContent="X";
-    playing(ind);
+document.querySelector('.pos1').addEventListener('click',() =>{
+    if(document.querySelector('.pos1').textContent != ''){
+        ind=1;
+        document.querySelector(`.pos${ind}`).textContent="X";
+        playing(ind);
+    }
 ;});
 document.querySelector('.pos2').addEventListener('click',() =>{ind=2;
     document.querySelector(`.pos${ind}`).textContent="X";
